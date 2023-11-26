@@ -8,6 +8,7 @@
 body{
     background-color: #D8D5D5;
     font-family: 'Poppins', sans-serif;
+    overflow-x:hidden;
 }
 
 .header{
@@ -71,7 +72,8 @@ margin-right: 0; /* Elemen akan mepet ke kanan sepenuhnya */
     margin-top: 250px;
 }
   .about{
-    margin: 169px 270px ;
+    
+    margin: 169px 200px ;
     opacity: 0.9;
     width: 600px;
     height: 390px;
@@ -101,7 +103,7 @@ margin-right: 0; /* Elemen akan mepet ke kanan sepenuhnya */
 .about p{
     font-family: 'Poppins', sans-serif;
     text-align: justify;
-    color:#3E3D44;
+    color:#3E3D44; 
 }
 
 .about button{
@@ -118,9 +120,8 @@ margin-right: 0; /* Elemen akan mepet ke kanan sepenuhnya */
 
 .about button:hover{
     cursor: pointer;
-    opacity: 50%;
 }
- 
+
 .image-section {
     display: flex;
     justify-content: flex-end;
@@ -132,9 +133,10 @@ margin-right: 0; /* Elemen akan mepet ke kanan sepenuhnya */
     height: 300px;
     border-radius: 10px;
     justify-content: flex-start;
-    margin: 20px 300px 0; 
+    margin: 20px 180px 0; 
     transform: translateY(-593px);
 }
+
 
 /* end About */
 .Gallry{
@@ -143,8 +145,8 @@ margin-right: 0; /* Elemen akan mepet ke kanan sepenuhnya */
 
 .container-gallry{
     max-width: 120rem;
-    padding: 0 2.2rem;
-    margin: 0 90px;
+    padding: 0 2rem;
+    margin: 0 80px;
     margin-top: -550px;
 }
 .heading-gallry{
@@ -153,11 +155,6 @@ margin-right: 0; /* Elemen akan mepet ke kanan sepenuhnya */
 }
 .heading-gallry span{
     color:#cf711f;
-}
-.heading-secondary-2{
-    font-size: 2.7rem;
-    color:#cf711f;
-    
 }
 
 .subheading-galrry{
@@ -198,7 +195,7 @@ margin-right: 0; /* Elemen akan mepet ke kanan sepenuhnya */
 /* start slide img paket */
 .judul-paket-slide{
     max-width: 120rem;
-    padding: 0 2.2rem;
+    padding: 0 1rem;
     margin: 0 90px;
     margin-top: 0px;
 }
@@ -399,7 +396,7 @@ margin-right: 0; /* Elemen akan mepet ke kanan sepenuhnya */
 }
 .grid{
     display: grid;
-    gap: 9.6rem;
+    gap: 6.6rem;
 }
 
 .grid--2-cols{
@@ -442,9 +439,10 @@ margin-right: 0; /* Elemen akan mepet ke kanan sepenuhnya */
     border-radius: 11px;
     overflow: hidden;
     transition: all 0.4s;
-    height: auto;
+    /* height: auto; */
     border: none;
-    
+    width: 300px;
+        
   }
   
   .destination:hover {
@@ -454,7 +452,7 @@ margin-right: 0; /* Elemen akan mepet ke kanan sepenuhnya */
   
   .desti-content {
     padding: 1.2rem ;
-    height:340px;
+    height:350px;
     background: #F3F3F3;
     margin-top: -20px;
     position: relative;
@@ -680,32 +678,30 @@ margin-right: 0; /* Elemen akan mepet ke kanan sepenuhnya */
 .Gallry-img img {
     display: block;
     margin: 0;
-    width: 80%;
+    width: 94.6%;
     height: 100%;
     border-radius: 3%;
     margin-left: 20px;
 }
 
 
-.name-desti {
+.button-desti-nature {
+    width: 140px; /* Menentukan lebar elemen */
+    padding: 9px; /* Menentukan padding */
+    border-radius: 5px 0 9px;
+    background-color: #255A65;
+    color: #ffffff;
+    font-family:'Poppins', sans-serif ;
+    cursor: pointer;
+    border: none;
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 150px;
-    padding: 10px;
-    border-radius: 5px 0 0 5px ;
-    background-color: #255A65;
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
-    border: none;
-    margin-bottom: 80px;
-    left: 210px;
-    opacity: 80%;
     text-align: center;
-
-}
-
+    /* left: 198px; */
+  
+  }
+  
 .button-back a{
     text-decoration: none;
     color: #ffffff;
@@ -740,24 +736,6 @@ margin-right: 0; /* Elemen akan mepet ke kanan sepenuhnya */
 }
 
 
-.name-desti-culture{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 170px;
-    padding: 10px;
-    border-radius: 5px 0 0 5px ;
-    background-color: #255A65;
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
-    border: none;
-    margin-bottom: 80px;
-    left: 155px;
-    opacity: 80%;
-    text-align: center;
-
-}
 
 
 /* ---------------------------------------------------End Style Css Culture Bali------------------------------------- */
@@ -786,21 +764,3 @@ margin-right: 0; /* Elemen akan mepet ke kanan sepenuhnya */
 
 }
 
-.name-desti-beach{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 170px;
-    padding: 10px;
-    border-radius: 5px 0 0 5px ;
-    background-color: #255A65;
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
-    border: none;
-    margin-bottom: 80px;
-    left: 155px;
-    opacity: 80%;
-    text-align: center;
-
-}

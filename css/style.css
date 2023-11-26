@@ -137,7 +137,8 @@ body{
     margin-top: 250px;
 }
   .about{
-    margin: 169px 270px ;
+    
+    margin: 169px 200px ;
     opacity: 0.9;
     width: 600px;
     height: 390px;
@@ -197,7 +198,7 @@ body{
     height: 300px;
     border-radius: 10px;
     justify-content: flex-start;
-    margin: 20px 300px 0; 
+    margin: 20px 180px 0; 
     transform: translateY(-593px);
 }
 
@@ -322,7 +323,7 @@ body{
   
   .desti-content {
     padding: 1.2rem ;
-    height:230px;
+    height:260px;
     background: #F3F3F3;
     margin-top: -20px;
     position: relative;
@@ -368,6 +369,8 @@ body{
     width: 100%;
     
   }
+
+
   .button-card{
     width: 100px; /* Menentukan lebar elemen */
     padding: 7px; /* Menentukan padding */
@@ -414,7 +417,7 @@ body{
 .Gallry-img {
     position: relative; 
     width: 30%;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     margin-right: 20px;
     padding: 0;
     display: inline-block;
@@ -424,35 +427,33 @@ body{
 .Gallry-img img {
     display: block;
     margin: 0;
-    width: 80%;
-    height: 90%;
-    border-radius: 5%;
-    margin-left: 20px;
+    width: 95%;
+    height: 100%;
+    border-radius: 4%;
+    /* margin-left: 4px; */
 }
 
 .button-desti {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 90px;
-    padding: 7px;
-    border-radius: 5px 0 5px;
-    background-color: #255A65;
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
-    border: none;
-    margin-bottom: 30px;
-    left: 220px;
-    
+  width: 150px; /* Menentukan lebar elemen */
+  padding: 7px; /* Menentukan padding */
+  border-radius: 5px 0 5px;
+  background-color: #255A65;
+  color: #ffffff;
+  font-family:'Poppins', sans-serif ;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  bottom: 0;
+  right: 17px;
+  /* left: 198px; */
 
 }
 
 .name-desti {
     position: absolute;
-    bottom: 0;
+    bottom: 79px;
     right: 0;
-    width: 130px;
+    width: 120px;
     padding: 5px;
     border-radius: 5px 0 0 5px ;
     background-color: #255A65;
@@ -460,11 +461,9 @@ body{
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
     border: none;
-    margin-bottom: 90px;
     left: 184px;
     opacity: 70%;
     text-align: center;
-
 }
 
 /* end Gallry */

@@ -2,10 +2,12 @@
     padding: 0;
     margin: 0;
 } 
-
+ 
 body{
     background-color: #D8D5D5;
     font-family: 'Poppins', sans-serif;
+    overflow-x:hidden;
+
 }
 
 .header{
@@ -69,7 +71,8 @@ margin-right: 0; /* Elemen akan mepet ke kanan sepenuhnya */
     margin-top: 250px;
 }
   .about{
-    margin: 169px 270px ;
+    
+    margin: 169px 200px ;
     opacity: 0.9;
     width: 600px;
     height: 390px;
@@ -99,7 +102,7 @@ margin-right: 0; /* Elemen akan mepet ke kanan sepenuhnya */
 .about p{
     font-family: 'Poppins', sans-serif;
     text-align: justify;
-    color:#3E3D44;
+    color:#3E3D44; 
 }
 
 .about button{
@@ -116,7 +119,6 @@ margin-right: 0; /* Elemen akan mepet ke kanan sepenuhnya */
 
 .about button:hover{
     cursor: pointer;
-    opacity: 50%;
 }
 
 .image-section {
@@ -130,19 +132,90 @@ margin-right: 0; /* Elemen akan mepet ke kanan sepenuhnya */
     height: 300px;
     border-radius: 10px;
     justify-content: flex-start;
-    margin: 20px 300px 0; 
+    margin: 20px 180px 0; 
     transform: translateY(-593px);
 }
+
+.About-traveling-kuy{
+    margin-top: 250px;
+}
+  .about{
+    
+    margin: 169px 200px ;
+    opacity: 0.9;
+    width: 600px;
+    height: 390px;
+    padding: 10px 30px 0;
+    box-sizing: border-box;
+    border-radius: 20px;
+
+    
+}
+
+.Title{
+    font-family:'Poppins', sans-serif;
+    color: #182F52;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.Title span{
+    color: orange;
+}
+
+.content h1{
+    font-family:'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.about p{
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    color:#3E3D44; 
+}
+
+.about button{
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color:#255A65;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about button:hover{
+    cursor: pointer;
+}
+
+.image-section {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.image img {
+    width: 320px;
+    height: 300px;
+    border-radius: 10px;
+    justify-content: flex-start;
+    margin: 20px 180px 0; 
+    transform: translateY(-593px);
+}
+
+
 
 /* end About */
 .Gallry{
     padding: 9.6rem 0;
-}
+} 
 
 .container-gallry{
     max-width: 120rem;
     padding: 0 2.2rem;
-    margin: 0 90px;
+    margin: 0 80px;
     margin-top: -550px;
 }
 .heading-gallry{
@@ -196,7 +269,7 @@ margin-right: 0; /* Elemen akan mepet ke kanan sepenuhnya */
 /* start slide img paket */
 .judul-paket-slide{
     max-width: 120rem;
-    padding: 0 2.2rem;
+    padding: 0 1rem;
     margin: 0 90px;
     margin-top: 0px;
 }
@@ -397,7 +470,7 @@ margin-right: 0; /* Elemen akan mepet ke kanan sepenuhnya */
 }
 .grid{
     display: grid;
-    gap: 9.6rem;
+    gap: 6.6rem;
 }
 
 .grid--2-cols{
@@ -440,9 +513,10 @@ margin-right: 0; /* Elemen akan mepet ke kanan sepenuhnya */
     border-radius: 11px;
     overflow: hidden;
     transition: all 0.4s;
-    height: auto;
+    /* height: auto; */
     border: none;
-    
+    width: 300px;
+        
   }
   
   .destination:hover {
@@ -452,7 +526,7 @@ margin-right: 0; /* Elemen akan mepet ke kanan sepenuhnya */
   
   .desti-content {
     padding: 1.2rem ;
-    height:310px;
+    height:350px;
     background: #F3F3F3;
     margin-top: -20px;
     position: relative;
@@ -517,6 +591,8 @@ margin-right: 0; /* Elemen akan mepet ke kanan sepenuhnya */
 
 }
 
+
+
 .desti-attribute i{
     font-size: 25px;
     color: #cf711f;
@@ -538,6 +614,11 @@ margin-right: 0; /* Elemen akan mepet ke kanan sepenuhnya */
     right: 20px;
     position: absolute;
     cursor: pointer;
+}
+
+.destination-button a{
+    text-decoration: none;
+    color: #ffffff;
 }
 .destination-button-1 {
     padding: 10px ;
@@ -568,7 +649,6 @@ margin-right: 0; /* Elemen akan mepet ke kanan sepenuhnya */
     text-decoration: none;
     color: white;
 }
-
 /* footer */
 .footer{
     margin-top: 90px;
@@ -656,7 +736,7 @@ margin-right: 0; /* Elemen akan mepet ke kanan sepenuhnya */
     margin-left: 49px;
     padding: 0 1rem;
  
-}
+} 
 
 .Gallry-img {
     position: relative; 
@@ -671,31 +751,29 @@ margin-right: 0; /* Elemen akan mepet ke kanan sepenuhnya */
 .Gallry-img img {
     display: block;
     margin: 0;
-    width: 80%;
+    width: 94.6%;
     height: 100%;
     border-radius: 3%;
     margin-left: 20px;
 }
+ 
 
-
-.name-desti-nature {
+.button-desti {
+    width: 140px; /* Menentukan lebar elemen */
+    padding: 9px; /* Menentukan padding */
+    border-radius: 5px 0 9px;
+    background-color: #255A65;
+    color: #ffffff;
+    font-family:'Poppins', sans-serif ;
+    cursor: pointer;
+    border: none;
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 130px;
-    padding: 5px;
-    border-radius: 5px 0 0 5px ;
-    background-color: #255A65;
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
-    border: none;
-    margin-bottom: 80px;
-    left: 185px;
-    opacity: 80%;
     text-align: center;
-
-}
+    /* left: 198px; */
+  
+  }
 
 .button-back a{
     text-decoration: none;
@@ -777,24 +855,3 @@ margin-right: 0; /* Elemen akan mepet ke kanan sepenuhnya */
 
 }
 
-.name-desti-beach {
-    
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 150px;
-        padding: 5px;
-        border-radius: 5px 0 0 5px ;
-        background-color: #255A65;
-        color: #ffffff;
-        font-family: 'Poppins', sans-serif;
-        cursor: pointer;
-        border: none;
-        margin-bottom: 80px;
-        left: 165px;
-        opacity: 80%;
-        text-align: center;
-    
-    
-
-}
