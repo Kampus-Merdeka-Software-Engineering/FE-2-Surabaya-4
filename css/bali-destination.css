@@ -233,8 +233,8 @@ margin-right: 0; /* Elemen akan mepet ke kanan sepenuhnya */
     width: 95%;
 }
 
-
-.slide-wrapper .image-list{
+ 
+.slide-wrapper .image-list{ 
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     gap: 18px;
