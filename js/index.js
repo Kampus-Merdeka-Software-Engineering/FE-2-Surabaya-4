@@ -17,7 +17,7 @@ const initSlider = () => {
 
             const boundedPosition = Math.max(0, Math.min(maxThumbPosition, newThumbPosition));
             const scrollPosition = (boundedPosition / maxThumbPosition) * maxScrollLeft ;
-
+ 
             scrollbarThumb.style.left = `${newThumbPosition}px`;
             imageList.scrollLeft = scrollPosition;
         }
