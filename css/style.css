@@ -11,8 +11,7 @@
 body{
     background-color: #D8D5D5;
     font-family: 'Poppins', sans-serif;
-    position: relative;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 /* Navbar */
@@ -38,7 +37,7 @@ nav{
 }
 .logo a{
   text-decoration: none;
-  color: rgb(173, 173, 173) ;
+  color: #282e38;
   
 
 }
@@ -52,9 +51,9 @@ nav{
 }
 
 .link a{
-  color: #ffff;
+  color: #081a43;
   font-size: 1.1rem;
-  font-weight: 700;
+  font-weight:bold;
   padding: 5px 0;
   margin: 0px 20px;
   transition: all .50s ease;
@@ -100,9 +99,9 @@ nav{
 
 .hero{
   height: 100%;
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
-  background-image: url(../img/header.jpg);
+  background-image: url(../img/Paket-desti-jawa/Bromo\,\ Nature\ East\ Jawa.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -285,63 +284,7 @@ about-button:hover{
 
 /* end */
 
-/* strat service */
-.service {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  /* margin-top: -20px; */
-  margin-bottom: 210px;
-}
 
-.title {
-  margin-bottom: 40px;
-  font-size: 15px;
-  color: #182F52;
-  text-align: center;
-}
-
-.features {
-  display: flex;
-  justify-content: center;
-  margin-left: 29px;
-}
-
-.feature  {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.2rem;
-  margin: 0 50px; 
-}
-
-
-.container-icon {
-  display: flex;
-  justify-content: center; /* Posisikan ikon di tengah */
-  align-items: center; /* Posisikan ikon di tengah */
-  background-color: #182f52;
-  padding: 10px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-  font-size: 39px; /* Sesuaikan ukuran ikon */
-  color: #FF5C00; /* Warna ikon */
-  border: 3px solid #fff;
-  width: 50px;
-  height: 49px;
-}
-
-
-.feature-title{
-  font-family: 'Poppins', sans-serif;
-  color: #182f52;
-  font-size: 15px;
-  text-align: center;
-  font-weight: 600;
-}
-
-/* end service */
 
 /*  Strat Popular destination  */
 .container{
@@ -487,31 +430,97 @@ about-button:hover{
 
 
 /* Strat Gallry */
-.galry {
-  transform: translateY(-270px);
-  max-width: 100%;
+.Destination-gallry-home{
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin-top: -170px;
+  margin-bottom: 80px;
+}
+
+.container-gallry-home{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  max-width: 90%;
-  margin: 50px auto;
-  margin-right: 15px;
-  margin-top: 370px;
+  gap: 100px 50px;
+  padding: 100px 50px;
 }
 
-.gambar {
-  width: 33.33%;
-  /*   */
+.container-gallry-home .card-gallry-home{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 300px;
+
+    border-radius: 20px;
+    transition: 0.5s;
 }
 
-.gambar img {
-  width: 300px;
-  height: 270px;
-  margin: 5px 10px 0;
-  border-radius: 10px;
+.container-gallry-home .card-gallry-home .img{
+    position: absolute;
+    top: 20px;
+    width: 350px;
+    height: 320px;
+    background: #3333;
+    border-radius: 12px;
+     overflow: hidden;
+    transition: 0.5s;
+   
 }
 
 
+.container-gallry-home .card-gallry-home .img img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container-gallry-home .card-gallry-home .content{
+  position: absolute;
+  top: 252px;
+  width: 100%;
+  padding: 0 30px;
+  height: 35px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.5s;
+  color: #ffffff;
+  font-size: 0.5rem;
+}
+
+.container-gallry-home .card-gallry-home:hover  .content{
+  top: 110px;
+  height: 280px ;
+}
+
+
+.container-nature .card-nature .content h2{
+  color: #084c57;
+}
+
+.container-nature .card-nature .content p{
+  text-align: justify;
+}
+
+.container-title-gallry{
+  max-width: 120rem;
+  padding: 0 1.2rem;
+  margin: 0 90px;
+  margin-top: 120px;
+  text-align: center;
+  
+}
+.heading-secondary span{
+  color: #e39c0f;
+}
 
 /* end Gallry */
 
@@ -539,7 +548,7 @@ about-button:hover{
 }
 
 .container__left p {
-  color: var(--text-dark);
+  color: #000000;
   margin-bottom: 1rem;
 }
 
@@ -554,7 +563,7 @@ about-button:hover{
   display: flex;
   align-items: flex-start;
   gap: 2rem;
-  background-color: var(--white);
+  background-color: #ffff;
   border-radius: 1rem;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
   cursor: pointer;
@@ -572,18 +581,16 @@ about-button:hover{
 
 .card__content span i {
   font-size: 2rem;
-  color: var(--primary-color);
 }
 
 .card__details p {
-  font-style: italic;
-  color: var(--text-dark);
+  font-style: bold;
+  color: #000000;
   margin-bottom: 1rem;
 }
 
 .card__details h4 {
   text-align: right;
-  color: var(--primary-color);
   font-size: 1rem;
   font-weight: 500;
 }
