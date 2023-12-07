@@ -5,11 +5,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bali-destination</title>
+    <title>invoice</title>
     <link rel="stylesheet" href="../css/invoice.css">
     <script src="../js/Booking.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.min.css">
 
     <link
         href="https://fonts.googleapis.com/css2?family=Alkalami&family=Caveat&family=Dancing+Script&family=Domine:wght@400;500&family=DynaPuff&family=Great+Vibes&family=Pacifico&family=Poppins:ital,wght@0,200;0,300;0,500;1,100&family=Roboto:wght@100&family=Sansita+Swashed:wght@300;400;500&family=Smooch&family=Smooch+Sans:wght@100&family=Viga&display=swap"
@@ -24,7 +26,11 @@
 <body>
     <div id="invoiceContainer">
         <h1>INVOICE</h1>
-        <div id="invoiceContent"></div>
+        <div id="invoiceContent"> </div>
+        <div class="button-container">
+            <button onclick="saveInvoice()">Save Invoice</button>
+            <button onclick="goBack()">Back To Home</button>
+        </div>
     </div>
 
     <script>
@@ -39,6 +45,21 @@
             document.getElementById("invoiceContent").innerHTML = decodedInvoiceText;
         } else {
             console.error("Data invoice tidak ditemukan");
+        }  
+        
+        function saveInvoice() {
+            // Tampilkan SweetAlert
+            Swal.fire({
+                title: 'Invoice Disimpan!',
+                text: 'Invoice telah disimpan dengan sukses.',
+                icon: 'success',
+                confirmButtonText: 'OK'
+            });
+        }
+
+        function goBack() {
+            // Kembali ke halaman index.html
+            window.location.href = "index.html";
         }
     </script>
 </body>
