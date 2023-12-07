@@ -47,29 +47,33 @@ document.addEventListener("DOMContentLoaded", function () {
         Destination Price: ${destinationPrice}
         `;
 
-       // Encode data untuk URL
-    var encodedInvoiceText = encodeURIComponent(invoiceText);
+        // Encode data untuk URL
+        var encodedInvoiceText = encodeURIComponent(invoiceText);
 
-    // Arahkan pengguna ke halaman invoicee.html dengan menggunakan URL parameter
-    window.location.href = "invoice.html?invoiceText=" + encodedInvoiceText;
+        Swal.fire({
+            title: 'Booking Requested!',
+            text: 'Your booking request has been submitted successfully.',
+            icon: 'success',
+            confirmButtonText: 'Chek Your Invocie'
+           
+        }).then(() => {
+            // Arahkan pengguna ke halaman invoice.html dengan menggunakan URL parameter
+            window.location.href = "invoice.html?invoiceText=" + encodedInvoiceText;
+        });
+    };
+
+    // INVOICE
+
+    // Ambil parameter dari URL
+    var urlParams = new URLSearchParams(window.location.search);
+    var invoiceText = urlParams.get("invoiceText");
+
+    // Tampilkan data di halaman
+    if (invoiceText !== null) { // Ubah kondisi ini untuk memastikan bahwa invoiceText tidak null
+        // Decode data dari URL
+        var decodedInvoiceText = decodeURIComponent(invoiceText);
+        document.getElementById("invoiceContent").innerHTML = decodedInvoiceText;
+    } else {
+        console.error("Data invoice tidak ditemukan");
     }
-
-    
-
 });
-
-// INVOICE
-
-  // Ambil parameter dari URL
-  var urlParams = new URLSearchParams(window.location.search);
-  var invoiceText = urlParams.get("invoiceText");
-
-  // Tampilkan data di halaman
-  if (invoiceText) {
-      // Decode data dari URL
-      var decodedInvoiceText = decodeURIComponent(invoiceText);
-      document.getElementById("invoiceContent").innerHTML = decodedInvoiceText;
-  } else {
-      console.error("Data invoice tidak ditemukan");
-  }
-
