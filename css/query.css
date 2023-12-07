@@ -50,6 +50,15 @@
         
     }
 
+    .hero-text p{
+      font-size: 12px;
+      
+  }
+
+  .container-title-gallry h2{
+    font-size: 15px;
+  }
+
 
 }
 /* end nav */
@@ -538,21 +547,6 @@
 /* end info panel */
 
 
-/* strat service */
-@media screen and (max-width: 428px){
-    .feature  {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1.2rem;
-        margin: 0 40px; 
-      }
-
-      .features{
-        margin-left: 15px;
-      }
-}
-/* end service */
 
 /* ------------------------------------end mobile ------------------------*/
 
