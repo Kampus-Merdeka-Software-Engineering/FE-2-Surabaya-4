@@ -753,6 +753,7 @@ footer{
   overflow: hidden;
   text-align: center;
   transition: 0.5s;
+  color: #182F52;
 }
 
 .container-gallry-lombok .card-gallry-lombok:hover  .content{
