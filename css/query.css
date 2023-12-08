@@ -67,7 +67,6 @@
     height: 100%;
     width: 100%;
     min-height: 100vh;
-    background-image: url(../img/header.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -414,7 +413,7 @@
     height: 100%;
     width: 100%;
     min-height: 100vw;
-    background-image: url(../img/header.jpg);
+
     background-size: cover;
     background-position: center;
     position: relative;
