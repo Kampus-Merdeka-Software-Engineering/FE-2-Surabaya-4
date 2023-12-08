@@ -518,8 +518,11 @@ about-button:hover{
   text-align: center;
   
 }
-.heading-secondary span{
-  color: #e39c0f;
+.heading-secondary-gallry {
+  
+    margin-bottom: 5.6rem;
+    color: #182F52;
+  font-size: 25px;
 }
 
 /* end Gallry */
