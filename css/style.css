@@ -728,6 +728,15 @@ textarea {
 } 
 /* end feadback */
 
+/* strat name display */
+#usernameDisplay {
+  color: orange; 
+  font-size: 16px; 
+  font-weight: bold; 
+  margin-right: 20px; 
+}
+/* end display */
+
 footer{
   background-color: #084c57;
   height: auto;

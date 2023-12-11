@@ -40,8 +40,7 @@
       <li><a href="#contak">Contact</a></li>
     </ul>
     <div class="main">
-      <a href="login.html" class="user">Sign In</a>
-      <a href="singn-up.html">Register</a>
+      <span id="usernameDisplay"></span>
       <div class="bx bx-menu" id="menu-icon"></div>
     </div>
   </nav>
@@ -377,6 +376,20 @@
         <p>copyright &copy;2023 Group-4</p>
       </div>
     </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const username = sessionStorage.getItem('username');
+
+        if (username) {
+          const usernameDisplay = document.getElementById('usernameDisplay');
+          if (usernameDisplay) {
+            usernameDisplay.textContent = `Hallo, ${username}!`;
+          }
+        }
+      });
+    </script>
+
 </body>
 
 </html>
