@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invocie</title>
+    <title>Invoice</title>
     <link rel="stylesheet" href="../css/invoice.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,15 +27,15 @@
         <table>
             <tr>
                 <td>Full name</td>
-                <td>{{$data->full_name}}</td>
+                <td><%= data.full_name%></td>
             </tr>
             <tr>
                 <td>Email</td>
-                <td>{{$data->email}}</td>
+                <td><%= data.email%></td>
             </tr>
             <tr>
                 <td>Phone</td>
-                <td>{{$data->phone}}</td>
+                <td><%= data.phone%></td>
             </tr>
             <tr>
                 <td>Nama Hotel</td>
@@ -68,6 +68,7 @@
 
         </table>
     </div>
+    
 </body>
 
 </html>
